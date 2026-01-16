@@ -3,3 +3,6 @@ index=windows sourcetype=WinEventLog:Security EventCode=4625
 | where failed_attempts > 5
 | sort - failed_attempts
 
+// are multiple accounts being targeted?
+// multiple fialures across users = brute-force or credential stuffing
+// EventCode 4625 = failed login
