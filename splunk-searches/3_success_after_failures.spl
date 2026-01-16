@@ -3,3 +3,5 @@ index=windows sourcetype=WinEventLog:Security
 | stats count by EventCode, user, src_ip
 | sort user, EventCode
 
+// did the attacker succedd?
+// EventCode 4624 = successful login
